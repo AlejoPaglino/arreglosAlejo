@@ -20,7 +20,7 @@ console.log("eliminado el del final")
 colores.shift("negro")
 console.log("eliminado el del principio")
 //PUNTO 8
-
+colores
 //PUNTO 9
 
 //PUNTO 10
