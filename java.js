@@ -20,7 +20,23 @@ console.log("eliminado el del final")
 colores.shift("negro")
 console.log("eliminado el del principio")
 //PUNTO 8
-colores
+colores[0] = 'marron'
+console.log(colores);
 //PUNTO 9
-
+for (let i = 0; i < colores.length; i++) {
+    console.log(`Color #${i + 1}: ${colores[i]}`);
+}
 //PUNTO 10
+let botonUsuario = document.getElementById('act10');
+
+botonUsuario.onclick = function(){
+    alert('Hola profe Ale')
+    let colores = prompt('Ingresa 3 colores (separados por coma)');
+    if (colores) {
+        let nuevosColores = colores.split(',');
+        console.log('Los colores que ingresaste fueron ' + nuevosColores);
+    } else {
+        console.log('No se ingresaron colores');
+    }
+    alert('Revisa la consola')
+}
